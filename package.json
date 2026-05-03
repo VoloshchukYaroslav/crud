@@ -1,0 +1,29 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html --public-url /crud/",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+         "server": "npx json-server --watch students.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoloshchukYaroslav/crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VoloshchukYaroslav/crud/issues"
+  },
+  "homepage": "https://github.com/VoloshchukYaroslav/crud#readme",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.15",
+    "parcel": "^2.16.4"
+  }
+}
